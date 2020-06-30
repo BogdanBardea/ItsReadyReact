@@ -1,0 +1,36 @@
+.searchbar {
+  border: none;
+  background-color: #EEEEEE;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+input {
+  border: none;
+  background-color: #EEEEEE;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.image-search {
+  background: #FFFFFF;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+  background-color: #FFFFF;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 10px;
+
+}
+
+.btn {
+  background-color: #FFFFFF;
+}
+
+.form-control {
+  background: #EEEEEE;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0px 0px 10px !important;
+}
