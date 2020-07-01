@@ -9,6 +9,7 @@ import {
   DropdownToggle,
 } from 'react-bootstrap';
 import arrow from '../../assets/arrow-down.png';
+import Switch from '../SwitchButton/SwitchButton';
 
 const MerchantsTable = () => {
   return (
@@ -132,14 +133,31 @@ const MerchantsTable = () => {
         </thead>
         <tbody className="table-body">
           <tr>
-            <td></td>
-            <td>Snack inn</td>
-            <td>Broodjeszaak</td>
-            <td>Sebastian Mathieu</td>
-            <td>0488896655</td>
-            <td>Zandstraat 20, 3660 Oudsbergen</td>
-            <td>1/10/2020</td>
-            <td></td>
+            <td>
+              <Switch />
+            </td>
+            <td className="table-data">Snack inn</td>
+            <td className="table-data">Broodjeszaak</td>
+            <td className="table-data">Sebastian Mathieu</td>
+            <td className="table-data">0488896655</td>
+            <td className="table-data">Zandstraat 20, 3660 Oudsbergen</td>
+            <td className="table-data">1/10/2020</td>
+            <td className="table-data">
+              {' '}
+              <Dropdown className="actions-dropdown">
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  <div className="table-text-head actions-dropdown">
+                    Acties <img src={arrow} alt="Arrow Down" />{' '}
+                  </div>
+                  <div className="dropdown-menu-items">
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Oplopend</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Aflopend</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </div>
+                </Dropdown.Toggle>
+              </Dropdown>
+            </td>
           </tr>
         </tbody>
       </Table>

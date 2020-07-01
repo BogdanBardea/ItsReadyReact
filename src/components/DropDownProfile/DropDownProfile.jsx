@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './DropDownProfile.css';
 
 import Avatar from '../../assets/Avatar.png';
@@ -8,6 +8,7 @@ import {
   DropdownMenu,
   DropdownToggle,
 } from 'react-bootstrap';
+import ProfileModal from '../ProfileModal/ProfileModal';
 const DropDownProfile = () => {
   return (
     <div className="profile-dropdown ml-auto mr-3">
@@ -19,7 +20,9 @@ const DropDownProfile = () => {
           </div>
           <div className="dropdown-menu-items">
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Profiel</Dropdown.Item>
+              <Dropdown.Item className="menu-items">
+                <ProfileModal />
+              </Dropdown.Item>
               <Dropdown.Item href="#/action-2">Uitloggen</Dropdown.Item>
             </Dropdown.Menu>
           </div>

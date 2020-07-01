@@ -24,17 +24,25 @@
 }
 
 .dropdown-menu {
- position: absolute;
- top: 0px;
- left: 67px;
- margin: 1px;
- right: auto;
- bottom: auto;
- transform: translate(0px, 50px);
- border-radius: 20px;
- background-color: #f2f2f2;
- font-style: normal;
- font-weight: normal;
- font-size: 18px;
- line-height: 25px;
+  position: absolute;
+  top: 0px;
+  left: 67px;
+  margin: 1px;
+  right: auto;
+  bottom: auto;
+  transform: translate(0px, 50px);
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.menu-items {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
 }

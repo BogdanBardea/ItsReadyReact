@@ -1,9 +1,10 @@
 import React from 'react';
 import './HomePage.css';
-import OrdersCharts from '../../components/OrdersChart/OrdersChart';
 import DatePicker from '../../components/DatePicker/DatePicker';
 import LiveViewCards from '../../components/LiveViewCards/LiveViewCards';
 import DownloadButton from '../../components/DownloadButton/DownloadButton';
+import OrdersChart from '../../components/OrdersChart/OrdersChart';
+import IncomesChart from '../../components/IncomesChart/IncomesChart';
 
 const HomePage = () => {
   return (
@@ -19,8 +20,9 @@ const HomePage = () => {
           <DownloadButton />
         </div>
       </div>
-      <div className="col-3 mt-5">
-        <OrdersCharts />
+      <div className="col mt-5 d-flex container-fluid justify-content-center">
+        <OrdersChart />
+        <IncomesChart />
       </div>
       <div className="col-3 live-view mt-3">
         <h3>LIVE OVERZICHT</h3>

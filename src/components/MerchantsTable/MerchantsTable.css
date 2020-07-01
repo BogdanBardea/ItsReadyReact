@@ -37,3 +37,19 @@
   border-radius: 10px;
   border: 1px;
 }
+
+.actions-dropdown {
+  background-color: #B5B268;
+  border-radius: 10px;
+  text-align: center !important;
+  color: #FFFFFF !important;
+}
+
+.table-data {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  color: #000000;
+}

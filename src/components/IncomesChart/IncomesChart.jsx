@@ -1,8 +1,8 @@
 import React from 'react';
 import { Chart } from 'react-charts';
-import './OrdersChart.css';
+import './IncomesChart.css';
 
-function OrdersChart() {
+function IncomesChart() {
   const data = React.useMemo(
     () => [
       {
@@ -44,8 +44,8 @@ function OrdersChart() {
   return (
     <div>
       <div className="d-flex">
-        <div className="col ml-3 chart-title"># BESTELLINGEN</div>
-        <div className="col text-right chart-total">totaal: 30</div>
+        <div className="col ml-3 chart-title">€ OMZET</div>
+        <div className="col text-right chart-total">totaal: €60</div>
       </div>
       <div
         style={{
@@ -66,4 +66,4 @@ function OrdersChart() {
   );
 }
 
-export default OrdersChart;
+export default IncomesChart;
