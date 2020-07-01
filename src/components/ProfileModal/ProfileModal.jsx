@@ -23,16 +23,41 @@ function ProfileModal(props) {
         className="modal"
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>MIJN PROFIEL</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          <div className="d-flex">
+            <div className="col modal-body-title">Naam</div>
+            <div className="col modal-body-title ">Voornam</div>
+          </div>
+          <div className="d-flex">
+            <div className="col modal-body-subtitle">Test</div>
+            <div className="col modal-body-subtitle">User</div>
+          </div>
+          <div className="d-flex">
+            <div className="col modal-body-title ">E-Mail</div>
+            <div className="col modal-body-title ">GSM</div>
+          </div>
+          <div className="d-flex">
+            <div className="col modal-body-subtitle ">info@futurize.be</div>
+            <div className="col modal-body-subtitle ">+32 484 83 56 21</div>
+          </div>
+        </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
+          <div
+            variant="primary"
+            className="profile-button"
+            onClick={handleClose}
+          >
+            Profiel Wijzigen
+          </div>
+          <div
+            variant="primary"
+            className="profile-password-button"
+            onClick={handleClose}
+          >
+            Wachtwoord wijzigen
+          </div>
         </Modal.Footer>
       </Modal>
     </>
