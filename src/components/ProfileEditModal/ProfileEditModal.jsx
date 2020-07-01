@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import './ProfileModal.css';
+import './ProfileEditModal.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import ProfileEditModal from '../ProfileEditModal/ProfileEditModal';
-import PasswordChangeModal from '../PasswordChangeModal/PasswordChangeModal';
 
-function ProfileModal(props) {
+function ProfileEditModal(props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,7 +11,7 @@ function ProfileModal(props) {
 
   return (
     <>
-      <div onClick={handleShow}>Profiel</div>
+      <div onClick={handleShow}>Profiel Wijzigen</div>
 
       <Modal
         {...props}
@@ -33,24 +31,32 @@ function ProfileModal(props) {
             <div className="col modal-body-title ">Voornam</div>
           </div>
           <div className="d-flex">
-            <div className="col modal-body-subtitle">Test</div>
-            <div className="col modal-body-subtitle">User</div>
+            <input type="text" className="col modal-body-subtitle " />
+            <input type="text " className="col modal-body-subtitle " />
           </div>
           <div className="d-flex">
             <div className="col modal-body-title ">E-Mail</div>
             <div className="col modal-body-title ">GSM</div>
           </div>
           <div className="d-flex">
-            <div className="col modal-body-subtitle ">info@futurize.be</div>
-            <div className="col modal-body-subtitle ">+32 484 83 56 21</div>
+            <input type="text" className="col modal-body-subtitle " />
+            <input type="text" className="col modal-body-subtitle " />
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <div variant="primary" className="profile-button">
-            <ProfileEditModal />
+          <div
+            variant="primary"
+            className="profile-button"
+            onClick={handleClose}
+          >
+            Opslaan
           </div>
-          <div variant="primary" className="profile-password-button">
-            <PasswordChangeModal />
+          <div
+            variant="primary"
+            className="profile-password-button"
+            onClick={handleClose}
+          >
+            Annuleren
           </div>
         </Modal.Footer>
       </Modal>
@@ -58,4 +64,4 @@ function ProfileModal(props) {
   );
 }
 
-export default ProfileModal;
+export default ProfileEditModal;

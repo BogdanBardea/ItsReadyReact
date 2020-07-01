@@ -151,8 +151,10 @@ const MerchantsTable = () => {
                   </div>
                   <div className="dropdown-menu-items">
                     <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Oplopend</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Aflopend</Dropdown.Item>
+                      <Dropdown.Item href="#/action-1">Login</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Details</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Extra's</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Verwijderen</Dropdown.Item>
                     </Dropdown.Menu>
                   </div>
                 </Dropdown.Toggle>
