@@ -10,6 +10,9 @@ import {
 } from 'react-bootstrap';
 import arrow from '../../assets/arrow-down.png';
 import Switch from '../SwitchButton/SwitchButton';
+import MerchantsDetailsModal from '../MerchantsDetailsModal/MerchantsDetailsModal';
+import ExtraModal from '../ExtraModal/ExtraModal';
+import MerchantsDeleteModal from '../MerchantsDeleteModal/MerchantsDeleteModal'
 
 const MerchantsTable = () => {
   return (
@@ -152,9 +155,9 @@ const MerchantsTable = () => {
                   <div className="dropdown-menu-items">
                     <Dropdown.Menu>
                       <Dropdown.Item href="#/action-1">Login</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Details</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Extra's</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Verwijderen</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2"><MerchantsDetailsModal/></Dropdown.Item>
+                      <Dropdown.Item href="#/action-2"><ExtraModal/></Dropdown.Item>
+                      <Dropdown.Item href="#/action-2"><MerchantsDeleteModal/></Dropdown.Item>
                     </Dropdown.Menu>
                   </div>
                 </Dropdown.Toggle>

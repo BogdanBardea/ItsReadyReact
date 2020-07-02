@@ -43,7 +43,7 @@ function ProfileEditModal(props) {
             <input type="text" className="col modal-body-subtitle " />
           </div>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className="justify-content-start">
           <div
             variant="primary"
             className="profile-button"

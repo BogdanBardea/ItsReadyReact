@@ -45,7 +45,7 @@ function ProfileModal(props) {
             <div className="col modal-body-subtitle ">+32 484 83 56 21</div>
           </div>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className="justify-content-start">
           <div variant="primary" className="profile-button">
             <ProfileEditModal />
           </div>

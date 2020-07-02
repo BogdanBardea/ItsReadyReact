@@ -9,6 +9,8 @@ import {
   DropdownToggle,
 } from 'react-bootstrap';
 import arrow from '../../assets/arrow-down.png';
+import DeleteUserModal from '../DeleteUsersModal/DeleteUserModal';
+import UserDetailsModal from '../UserDetailsModal/UserDetailsModal';
 
 const UsersTable = () => {
   return (
@@ -148,9 +150,11 @@ const UsersTable = () => {
                   </div>
                   <div className="dropdown-menu-items">
                     <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Bekijken</Dropdown.Item>
+                      <Dropdown.Item href="#/action-1">
+                        <UserDetailsModal />
+                      </Dropdown.Item>
                       <Dropdown.Item href="#/action-2">
-                        Verwijderen
+                        <DeleteUserModal />
                       </Dropdown.Item>
                     </Dropdown.Menu>
                   </div>

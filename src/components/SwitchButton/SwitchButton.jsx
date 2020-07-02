@@ -16,7 +16,6 @@ class Switch extends React.Component {
 
   render() {
     return (
-      <div className="switch-container">
         <label>
           <input
             ref="switch"
@@ -29,13 +28,12 @@ class Switch extends React.Component {
             <div></div>
           </div>
         </label>
-      </div>
     );
   }
 
   _handleChange() {
     this.setState({ isChecked: !this.state.isChecked });
-  };
-};
+  }
+}
 
 export default Switch;
