@@ -9,6 +9,7 @@ import {
   DropdownToggle,
 } from 'react-bootstrap';
 import arrow from '../../assets/arrow-down.png';
+import SettingsDeleteModal from '../SettingsDeleteModal/SettingsDeletemodal';
 
 const SettingsTable = () => {
   return (
@@ -105,7 +106,23 @@ const SettingsTable = () => {
             <td>0484835621</td>
             <td>Actief</td>
             <td>1/10/2020</td>
-            <td></td>
+            <td>
+              <Dropdown className="actions-dropdown">
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  <div className="table-text-head actions-dropdown">
+                    Acties <img src={arrow} alt="Arrow Down" />{' '}
+                  </div>
+                  <div className="dropdown-menu-items">
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1"></Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">
+                        <SettingsDeleteModal />
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </div>
+                </Dropdown.Toggle>
+              </Dropdown>
+            </td>
           </tr>
         </tbody>
       </Table>

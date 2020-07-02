@@ -11,7 +11,7 @@ function PasswordChangeModal(props) {
 
   return (
     <>
-      <div onClick={handleShow}>Profiel Wijzigen</div>
+      <div onClick={handleShow}>Wachtwoord wijzigen</div>
 
       <Modal
         {...props}
@@ -26,23 +26,13 @@ function PasswordChangeModal(props) {
           <Modal.Title>MIJN PROFIEL</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className="d-flex">
-            <div className="col modal-body-title">HUIDIG WACTHWOORD</div>
-          </div>
-          <div className="d-flex">
-            <input type="text " className="col modal-body-subtitle " />
-          </div>
-          <div className="d-flex">
-            <div className="col modal-body-title ">NIEUW WACTHWOORD</div>
-          </div>
-          <div className="d-flex">
-            <input type="text" className="col modal-body-subtitle " />
-          </div>
-          <div className="d-flex">
-            <div className="col modal-body-title ">HERHAAL WACTHWOORD</div>
-          </div>
-          <div className="d-flex">
-            <input type="text" className="col modal-body-subtitle " />
+          <div className="container-fluid">
+            <div className="modal-body-title">HUIDIG WACHTWOORD</div>
+            <input type="text" className="input-profile" />
+            <div className="modal-body-title">NIEUW WACHTWOORD</div>
+            <input type="text" className="input-profile" />
+            <div className="modal-body-title">HERHAAL NIEUW WACHTWOORD</div>
+            <input type="text" className="input-profile" />
           </div>
         </Modal.Body>
         <Modal.Footer className="justify-content-start">

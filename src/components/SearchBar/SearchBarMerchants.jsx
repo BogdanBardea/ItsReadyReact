@@ -8,11 +8,14 @@ const SearchBarMerchants = () => {
       <form className="d-flex">
         <input
           type="text"
-          className="form-control rounded bg-light  py-2 mr-1 pr-5 center "
+          className="form-control bg-light  py-2 mr-1 pr-5 center "
           placeholder="Zoek handelaar"
         />
         <span className="input-group-append">
-          <button className="btn  ml-n5 search-button py-2" type="button">
+          <button
+            className="btn-search  ml-n5 search-button py-2"
+            type="button"
+          >
             <img src={search} alt="search" />
           </button>
         </span>

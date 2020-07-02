@@ -26,21 +26,19 @@ function ProfileEditModal(props) {
           <Modal.Title>MIJN PROFIEL</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className="d-flex">
-            <div className="col modal-body-title">Naam</div>
-            <div className="col modal-body-title ">Voornam</div>
-          </div>
-          <div className="d-flex">
-            <input type="text" className="col modal-body-subtitle " />
-            <input type="text " className="col modal-body-subtitle " />
-          </div>
-          <div className="d-flex">
-            <div className="col modal-body-title ">E-Mail</div>
-            <div className="col modal-body-title ">GSM</div>
-          </div>
-          <div className="d-flex">
-            <input type="text" className="col modal-body-subtitle " />
-            <input type="text" className="col modal-body-subtitle " />
+          <div className="container-fluid d-flex">
+            <div className="col">
+              <div className="modal-body-title">NAAM</div>
+              <input type="text" className="input-profile" />
+              <div className="modal-body-title">E-MAIL</div>
+              <input type="text" className="input-profile" />
+            </div>
+            <div className="col">
+              <div className="modal-body-title">VOORNAM</div>
+              <input type="text" className="input-profile" />
+              <div className="modal-body-title">GSM</div>
+              <input type="text" className="input-profile" />
+            </div>
           </div>
         </Modal.Body>
         <Modal.Footer className="justify-content-start">

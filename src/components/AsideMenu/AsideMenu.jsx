@@ -1,44 +1,44 @@
-import React from "react";
-import "./AsideMenu.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
-import { Nav } from "react-bootstrap";
-import clockicon from "../../assets/clockicon.png";
-import homeicon from "../../assets/homeicon.png";
-import planeicon from "../../assets/planeicon.png";
-import settingsicon from "../../assets/settingsicon.png";
-import usericon from "../../assets/usericon.png";
+import React from 'react';
+import './AsideMenu.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
+import { Nav } from 'react-bootstrap';
+import clockicon from '../../assets/clockicon.png';
+import homeicon from '../../assets/homeicon.png';
+import planeicon from '../../assets/planeicon.png';
+import settingsicon from '../../assets/settingsicon.png';
+import usericon from '../../assets/usericon.png';
 const AsideMenu = () => {
   const imgSrc = [
     {
       source: clockicon,
-      name: "HOME",
-      link: "/",
+      name: 'HOME',
+      link: '/',
     },
     {
       source: homeicon,
-      name: "HANDELAARS",
-      link: "/merchants",
+      name: 'HANDELAARS',
+      link: '/merchants',
     },
     {
       source: usericon,
-      name: "GEBRUIKERS",
-      link: "/users",
+      name: 'GEBRUIKERS',
+      link: '/users',
     },
     {
       source: planeicon,
-      name: "PUSHBERICHTEN",
-      link: "/notifications",
+      name: 'PUSHBERICHTEN',
+      link: '/notifications',
     },
     {
       source: settingsicon,
-      name: "INSTELLINGEN",
-      link: "/settings",
+      name: 'INSTELLINGEN',
+      link: '/settings',
     },
   ];
   return (
     <div className="container">
-      <img src={logo} alt="Logo" className="logo mb-5" />
+      <img src={logo} alt="Logo" className="logo mb-5 mt-3 ml-5" />
       {imgSrc.map((item, idx) => {
         return (
           <div key={idx} className="col-4 menu-text">

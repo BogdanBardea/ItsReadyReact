@@ -32,11 +32,7 @@
   padding: 1px;
 }
 
-.table-header {
-  background: #F6F9FC;
-  border-radius: 10px;
-  border: 1px;
-}
+
 
 .actions-dropdown {
   background-color: #B5B268;
@@ -52,4 +48,29 @@
   line-height: 19px;
   align-items: center;
   color: #000000;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  background: #F6F9FC;
+  border-radius: 10px;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  border-spacing: 2px;
+  border-color: grey;
+  border-radius: 10px;
+}
+
+.dropdwon {
+  text-align: center;
+}
+
+.btn {
+  text-align: center;
 }

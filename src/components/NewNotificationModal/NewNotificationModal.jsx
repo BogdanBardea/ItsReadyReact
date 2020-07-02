@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './NewNotificationModal.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import NewNotificationModalSucces from '../NewNotificationModalSucces/NewNotificationModalSucces';
 
 function NewNotificationModal(props) {
   const [show, setShow] = useState(false);
@@ -93,7 +94,7 @@ function NewNotificationModal(props) {
             Annuleren
           </div>
           <div variant="primary" className="profile-button">
-            Versturen
+            <NewNotificationModalSucces />
           </div>
         </Modal.Footer>
       </Modal>

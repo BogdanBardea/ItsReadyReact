@@ -12,13 +12,13 @@ import arrow from '../../assets/arrow-down.png';
 import Switch from '../SwitchButton/SwitchButton';
 import MerchantsDetailsModal from '../MerchantsDetailsModal/MerchantsDetailsModal';
 import ExtraModal from '../ExtraModal/ExtraModal';
-import MerchantsDeleteModal from '../MerchantsDeleteModal/MerchantsDeleteModal'
+import MerchantsDeleteModal from '../MerchantsDeleteModal/MerchantsDeleteModal';
 
 const MerchantsTable = () => {
   return (
     <div className="container-fluid mt-5">
-      <Table responsive="sm">
-        <thead className="table-header">
+      <Table>
+        <thead className="table-header-merchants">
           <tr>
             <th>
               <Dropdown>
@@ -147,17 +147,23 @@ const MerchantsTable = () => {
             <td className="table-data">1/10/2020</td>
             <td className="table-data">
               {' '}
-              <Dropdown className="actions-dropdown">
+              <Dropdown className="actions-dropdown text-center">
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head actions-dropdown">
+                  <div className="table-text-head actions-dropdown text-center">
                     Acties <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
                     <Dropdown.Menu>
                       <Dropdown.Item href="#/action-1">Login</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2"><MerchantsDetailsModal/></Dropdown.Item>
-                      <Dropdown.Item href="#/action-2"><ExtraModal/></Dropdown.Item>
-                      <Dropdown.Item href="#/action-2"><MerchantsDeleteModal/></Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">
+                        <MerchantsDetailsModal />
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">
+                        <ExtraModal />
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">
+                        <MerchantsDeleteModal />
+                      </Dropdown.Item>
                     </Dropdown.Menu>
                   </div>
                 </Dropdown.Toggle>

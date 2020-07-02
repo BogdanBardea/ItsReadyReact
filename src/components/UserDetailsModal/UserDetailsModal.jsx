@@ -3,6 +3,7 @@ import './UserDetailsModal.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import ProfileLogo from '../../assets/ProfileLogo.png';
+import NewNotificationModalSucces from '../NewNotificationModalSucces/NewNotificationModalSucces';
 
 function UsersDetailsModal(props) {
   const [show, setShow] = useState(false);
@@ -88,7 +89,7 @@ function UsersDetailsModal(props) {
         </Modal.Body>
         <Modal.Footer>
           <div variant="primary" className="profile-button">
-            Versturen
+            <NewNotificationModalSucces />
           </div>
         </Modal.Footer>
       </Modal>
