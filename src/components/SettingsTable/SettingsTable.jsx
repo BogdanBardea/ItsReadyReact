@@ -10,7 +10,7 @@ import {
 } from 'react-bootstrap';
 import arrow from '../../assets/arrow-down.png';
 import SettingsDeleteModal from '../SettingsDeleteModal/SettingsDeletemodal';
-
+import SettingsDeleteModalFirst from '../SettingsDeleteModalFirst/SettingsDeletemodalFirst';
 const SettingsTable = () => {
   return (
     <div className="container-fluid mt-5">
@@ -114,9 +114,11 @@ const SettingsTable = () => {
                   </div>
                   <div className="dropdown-menu-items">
                     <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1"></Dropdown.Item>
                       <Dropdown.Item href="#/action-2">
                         <SettingsDeleteModal />
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-1">
+                        <SettingsDeleteModalFirst />
                       </Dropdown.Item>
                     </Dropdown.Menu>
                   </div>

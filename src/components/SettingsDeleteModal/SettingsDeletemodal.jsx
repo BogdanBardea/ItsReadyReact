@@ -11,7 +11,7 @@ function SettingsDeleteModal(props) {
 
   return (
     <>
-      <div onClick={handleShow}>Verwijderen</div>
+      <div onClick={handleShow}>Uitnodiging versturen</div>
 
       <Modal
         {...props}
@@ -44,7 +44,7 @@ function SettingsDeleteModal(props) {
               Annuleren
             </div>
             <div variant="primary" className="profile-button ml-3">
-              <SettingsDeleteModalFirst />
+              Uitnodiging versturen
             </div>
           </div>
         </Modal.Footer>

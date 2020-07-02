@@ -11,7 +11,7 @@ function SettingsDeleteModalFirst(props) {
 
   return (
     <>
-      <div onClick={handleShow}>Uitnodiging versturen</div>
+      <div onClick={handleShow}>Verwijderen</div>
 
       <Modal
         {...props}
