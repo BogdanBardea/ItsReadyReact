@@ -29,9 +29,13 @@ const ForgotPassword = () => {
           </InputGroup>
         </div>
         <div className=" d-flex align-items-center justify-content-center mt-5">
-          <button className="reset-button" style={{ marginBottom: '20px' }}>
+          <a
+            className="reset-button d-flex align-items-center justify-content-center"
+            href="/email_sent"
+            style={{ marginBottom: '20px' }}
+          >
             Wachtwoord herstellen
-          </button>
+          </a>
         </div>
       </div>
       <a href="#" className="password-forgot mb-5">
