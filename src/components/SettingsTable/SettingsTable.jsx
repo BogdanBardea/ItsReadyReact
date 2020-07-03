@@ -13,8 +13,8 @@ import SettingsDeleteModal from '../SettingsDeleteModal/SettingsDeletemodal';
 import SettingsDeleteModalFirst from '../SettingsDeleteModalFirst/SettingsDeletemodalFirst';
 const SettingsTable = () => {
   return (
-    <div className="container-fluid mt-5">
-      <Table responsive="sm">
+    <div className="mt-5">
+      <Table>
         <thead className="table-header">
           <tr>
             <th>

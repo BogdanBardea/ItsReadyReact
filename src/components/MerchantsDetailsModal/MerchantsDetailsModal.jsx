@@ -31,7 +31,7 @@ function MerchantsDetailsModal(props) {
             <div className="col">
               LOREM IPSUM ITALIAN RESTAURANT <img src={edit} alt="edit" />
             </div>
-            <div className="d-flex">
+            <div className="d-flex mt-3 status">
               <div className="col status-text">STATUS</div>
               <div className="col">
                 <Switch />

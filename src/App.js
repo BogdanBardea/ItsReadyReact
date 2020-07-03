@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -14,40 +14,111 @@ import Merchants from "./pages/Merchants/Merchants";
 import Users from "./pages/Users/Users";
 import Notifications from "./pages/Notifications/Notifications";
 import { createBrowserHistory } from "history";
-import Login from "./pages/Login/Login";
+import LoginPage from "./pages/Login/Login";
+import ResetPassword from "./pages/ForgotPassword/ForgotPassword";
+import EmailSent from "./pages/ForgotPasswordEmailSent/ForgotPasswordEmailSent";
+import SettingsBtw from "./pages/SettingsBtw/SettingsBtw"
 const App = (props) => {
   const history = createBrowserHistory();
+  const [token, setToken] = useState(
+    localStorage.getItem("token") ? localStorage.getItem("token") : ""
+  );
+  const [user, setUser] = useState(
+    localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : {}
+  );
   return (
     <Router>
-      <div>
-        <div className="row">
-          {history.location.pathname == "/login" ? (
-            ""
-          ) : (
+      {history.location.pathname == "/login" ||
+      history.location.pathname == "/reset_password" ||
+      history.location.pathname == "/email_sent" ? (
+        <Switch>
+          <Route path="/login">
+            <LoginPage
+              token={token}
+              setToken={setToken}
+              user={user}
+              setUser={setUser}
+            />
+          </Route>
+          <Route path="/merchants">
+            <Merchants token={token} setToken={setToken} />
+          </Route>
+          <Route path="/users">
+            <Users token={token} setToken={setToken} />
+          </Route>
+          <Route path="/notifications">
+            <Notifications token={token} setToken={setToken} />
+          </Route>
+          <Route path="/settings">
+            <Settings token={token} setToken={setToken} />
+          </Route>
+          <Route path="/reset_password">
+            <ResetPassword token={token} setToken={setToken} />
+          </Route>
+          <Route path="/email_sent">
+            <EmailSent token={token} setToken={setToken} />
+          </Route>
+          <Route path="/settingsbtw">
+            <SettingsBtw token={token} setToken={setToken} />
+          </Route>
+          <Route path="/">
+            <HomePage token={token} setToken={setToken} />
+          </Route>
+        </Switch>
+      ) : (
+        <div>
+          <div
+            className="row"
+            style={{ maxWidth: "100%", margin: "0px", padding: "0px" }}
+          >
             <div className="col-2">
               <AsideMenu />
             </div>
-          )}
-          <div className="col-10">
-            {history.location.pathname == "/login" ? "" : <Header />}
-            <div className="row">
-              <div className="col-12">
-                <Switch>
-                  <Route exact={true} path="/" component={HomePage} />{" "}
-                  <Route path="/merchants" component={Merchants} />{" "}
-                  <Route path="/users" component={Users} />{" "}
-                  <Route path="/notifications" component={Notifications} />{" "}
-                  <Route path="/settings" component={Settings} />
-                  <Route path="/login" component={Login} />
-                  {/* <Route exact path='/signin' render={() => currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)} /> */}{" "}
-                </Switch>{" "}
+            <div className="col-10" style={{ paddingRight: "0px" }}>
+              <Header
+                user={user}
+                setUser={setUser}
+                token={token}
+                setToken={setToken}
+              />
+              <div className="row" style={{ maxWidth: "100%" }}>
+                <div className="col-12">
+                  <Switch>
+                    <Route path="/login">
+                      <LoginPage token={token} setToken={setToken} />
+                    </Route>
+                    <Route path="/merchants">
+                      <Merchants token={token} setToken={setToken} />
+                    </Route>
+                    <Route path="/users">
+                      <Users token={token} setToken={setToken} />
+                    </Route>
+                    <Route path="/notifications">
+                      <Notifications token={token} setToken={setToken} />
+                    </Route>
+                    <Route path="/settings">
+                      <Settings token={token} setToken={setToken} />
+                    </Route>
+                    <Route path="/reset_password">
+                      <ResetPassword token={token} setToken={setToken} />
+                    </Route>
+                    <Route path="/email_sent">
+                      <EmailSent token={token} setToken={setToken} />
+                    </Route>
+                    <Route path="/settingsbtw">
+                      <SettingsBtw token={token} setToken={setToken} />
+                    </Route>
+                    <Route path="/">
+                      <HomePage token={token} setToken={setToken} />
+                    </Route>
+                  </Switch>
+                </div>{" "}
               </div>{" "}
             </div>{" "}
           </div>{" "}
-        </div>{" "}
-      </div>
+        </div>
+      )}
     </Router>
   );
 };
-
 export default App;

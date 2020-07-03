@@ -45,5 +45,6 @@
 
 .bottom-sidebar {
   margin-top: auto;
-
+  position: relative;
+  bottom: -405px;
 }

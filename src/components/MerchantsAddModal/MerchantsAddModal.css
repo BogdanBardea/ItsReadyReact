@@ -27,6 +27,7 @@
   line-height: 20px;
   align-items: center;
   color: #000000;
+  flex-direction: row;
 }
 
 .modal-body-title {
@@ -106,7 +107,6 @@
   font-size: 14px;
   line-height: 14px;
   color: #000000;
-  text-align: -webkit-center;
   margin-bottom: 17px;
 }
 
@@ -114,6 +114,15 @@
   display: inline-block;
   margin-bottom: .5rem;
   margin-top: 0.4rem;
+}
+
+.input-modal {
+  width: 240px;
+  height: 40px;
+  background: #FAFAFA;
+  box-shadow: inset 0px -2px 4px rgba(157, 157, 157, 0.15);
+  border-radius: 10px;
+  border-color: transparent;
 }
 
 .status {

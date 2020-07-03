@@ -1,0 +1,14 @@
+.second-button {
+  width: 120px;
+  height: 44px;
+  text-align: center;
+}
+
+.second-button-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-align: center;
+}

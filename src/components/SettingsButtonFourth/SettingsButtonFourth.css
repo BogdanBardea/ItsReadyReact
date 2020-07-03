@@ -1,0 +1,16 @@
+.fourth-button {
+  width: 120px;
+  height: 44px;
+  background: #C7C58E;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.fourth-button-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-align: center;
+}

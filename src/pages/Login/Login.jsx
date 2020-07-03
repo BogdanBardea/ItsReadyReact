@@ -5,11 +5,18 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { FormControl } from 'react-bootstrap';
 import EmailIcon from '../../assets/EmailIcon.png';
 import PasswordIcon from '../../assets/PasswordIcon.png';
-
-const Login = () => {
+const LoginPage = () => {
   return (
-    <div className="linear-background d-flex justify-content-center align-items-center">
-      <img src={BigLogo} alt="Big Logo" className="logo-image" />
+    <div
+      className="linear-background d-flex justify-content-center align-items-center"
+      style={{ maxHeight: '100vh', overflow: 'hidden' }}
+    >
+      <img
+        src={BigLogo}
+        alt="Big Logo"
+        className="logo-image"
+        style={{ paddingTop: '60px' }}
+      />
       <div className="login-title">Login</div>
       <div className="login-card mb-5">
         <div className=" d-flex  align-items-center input-forms">
@@ -43,15 +50,16 @@ const Login = () => {
           <div className="checkbox-text mt-3 ml-3">Onthoud mij</div>
         </div>
         <div className=" d-flex align-items-center justify-content-center mt-5">
-          <button className="login-button">Inloggen</button>
+          <button className="login-button" style={{ marginBottom: '20px' }}>
+            Inloggen
+          </button>
         </div>
       </div>
-      <a href="#" className="password-forgot mb-5">
+      <a href="/reset_password" className="password-forgot mb-5">
         Wachtwoord vergeten?
       </a>
       <div className="footer-text">© 2020 IT’S READY</div>
     </div>
   );
 };
-
-export default Login;
+export default LoginPage;

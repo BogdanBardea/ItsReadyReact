@@ -11,7 +11,7 @@ import {
 import arrow from '../../assets/arrow-down.png';
 import DeleteUserModal from '../DeleteUsersModal/DeleteUserModal';
 import UserDetailsModal from '../UserDetailsModal/UserDetailsModal';
-
+import DropdownButtonUsersTable from '../DropdownButtonUsersTable/DropdownButtonUsersTable';
 const UsersTable = () => {
   return (
     <div className="container-fluid mt-5">
@@ -141,25 +141,8 @@ const UsersTable = () => {
             <td>0488896655</td>
             <td>Man</td>
             <td>1/10/2020</td>
-            <td className="table-data">
-              {' '}
-              <Dropdown className="actions-dropdown">
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head actions-dropdown">
-                    Acties <img src={arrow} alt="Arrow Down" />{' '}
-                  </div>
-                  <div className="dropdown-menu-items">
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">
-                        <UserDetailsModal />
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">
-                        <DeleteUserModal />
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </div>
-                </Dropdown.Toggle>
-              </Dropdown>
+            <td>
+              <DropdownButtonUsersTable />
             </td>
           </tr>
         </tbody>
