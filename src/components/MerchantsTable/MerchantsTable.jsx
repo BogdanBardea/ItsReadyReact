@@ -154,7 +154,7 @@ const MerchantsTable = () => {
                   </div>
                   <div className="dropdown-menu-items">
                     <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Login</Dropdown.Item>
+                      <Dropdown.Item href="/login">Login</Dropdown.Item>
                       <Dropdown.Item href="#/action-2">
                         <MerchantsDetailsModal />
                       </Dropdown.Item>
