@@ -1,5 +1,139 @@
-.card-content {
-  background: #f4f5f7;
+.linear-background {
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(176deg, rgba(255, 255, 255, 1) 50%, rgba(65, 62, 56, 1) 50%);
+}
+
+.login-card {
+  width: 445px;
+  height: 358px;
+  background: #F4F5F7;
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  flex-direction: column;
+}
+
+.login-input {
+  width: 349px;
+  height: 46px;
+  background: #FFFFFF;
+  box-shadow: none !important;
+  border-radius: 6px;
+}
+
+.input-forms {
+  flex-direction: column;
+}
+
+.input-checkbox {
+  width: 20px;
+  height: 19px;
+  border-color: transparent !important;
+  border: none !important;
+}
+
+.checkbox-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8898AA;
+}
+
+.login-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  color: #413E38;
+  position: relative;
+  top: -50px
+}
+
+.login-button {
+  background-color: #B5B268;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 163px;
+  height: 47px;
+  border: none !important;
+  outline: none;
+  border-color: transparent !important;
+  color: #FFFFFF;
+}
+
+.form-control {
+  display: block;
+  width: 349px !important;
+  height: 46px !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: transparent !important;
+  background-clip: padding-box;
+  border: transparent !important;
+  border-radius: .25rem;
+
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 349px !important;
+  height: 46px !important;
+  flex-wrap: initial !important;
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  background-color: transparent !important;
+  border: transparent !important;
+  border-radius: .25rem;
+}
+
+.password-forgot {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ADB5BD;
+}
+
+.logo-image {
+  position: relative;
+  top: -105px;
+}
+
+.footer-text {
+  position: relative;
+  bottom: -70px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px !important;
+  margin-left: -15px;
 }
