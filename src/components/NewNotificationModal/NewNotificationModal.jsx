@@ -58,8 +58,27 @@ function NewNotificationModal(props) {
               <div className="col modal-body-title">BOODSCHAP</div>
               <div className="col modal-body-title">
                 <div className="col">
-                  <div className="choice-text mb-3">Verstuur nu</div>
-                  <div className="choice-text">Plannen voor later</div>
+                  <label class="container d-flex">
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="radio"
+                      className="radio-input-checkbox"
+                    />
+                    <span class="checkmark"></span>
+                    <div className="choice-text mb-3 ml-3">Verstuur nu</div>
+                  </label>
+
+                  <label class="container d-flex">
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="radio"
+                      className="radio-input-checkbox"
+                    />
+                    <span class="checkmark"></span>
+                    <div className="choice-text ml-3">Plannen voor later</div>
+                  </label>
                 </div>
               </div>
             </div>
@@ -74,8 +93,32 @@ function NewNotificationModal(props) {
             <div className="d-flex">
               <div className="col modal-body-title">
                 <div className="col">
-                  <div className="choice-text mb-3">Verstuur nu</div>
-                  <div className="choice-text">Plannen voor later</div>
+                  <div>
+                  <label class="container d-flex">
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="radio-second"
+                      className="radio-input-checkbox"
+                    />
+                    <span class="checkmark"></span>
+                    <div className="choice-text mb-3 ml-3">
+                      Verstuur naar iedereen
+                    </div>
+                  </label>
+                  <label class="container d-flex">
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="radio-second"
+                      className="radio-input-checkbox"
+                    />
+                    <span class="checkmark"></span>
+                    <div className="choice-text ml-3">
+                      Verstur locatie gericht
+                    </div>
+                  </label>
+                </div>
                 </div>
               </div>
             </div>

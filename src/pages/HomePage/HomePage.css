@@ -1,4 +1,5 @@
 .head-title {
+  font-family: 'Track';
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -10,9 +11,10 @@
 }
 
 .live-view {
+  font-family: 'Track';
   font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 20px;
-color: #000000;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
 }

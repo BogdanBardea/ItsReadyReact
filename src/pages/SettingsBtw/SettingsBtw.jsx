@@ -12,12 +12,12 @@ const SettingsBtw = () => {
       <div className="settings-button-fourth">
         <SettingsButtonFourth />
       </div>
-      <div className="row d-flex mb-4">
-        <div className="col head-title">
+      <div className="row d-flex mb-4 settingsbtw-title">
+        <div className="col head-title ">
           <h3>BTW REGELS</h3>
         </div>
       </div>
-      <div className="d-flex ml-5">
+      <div className="d-flex ml-5 settingsbtw-body">
         <div className=" mt-5">
           <div className="btw-text ">Bereide gerechten</div>
           <div className="btw-text ">Gerechten zonder bereiding</div>
@@ -55,7 +55,7 @@ const SettingsBtw = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex ml-5">
+      <div className="d-flex ml-5 settingsbtw-buttons">
         <div className="reset-button d-flex align-items-center justify-content-center mr-3">
           Wijzigingen resetten
         </div>

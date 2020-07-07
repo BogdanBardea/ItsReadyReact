@@ -13,6 +13,22 @@
   }
 }
 
+
+
+a:hover {
+
+  text-decoration: none !important;
+  background-color: transparent;
+}
+
+.btn:focus {
+  outline: none !important;
+  outline-offset: none !important;
+  border: none !important;
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,6 +40,14 @@
   color: white;
 }
 
+.input:focus {
+  outline: none !important;
+  outline-offset: none !important;
+  border: none !important;
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -32,6 +56,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

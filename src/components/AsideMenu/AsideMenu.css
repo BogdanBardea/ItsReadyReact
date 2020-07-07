@@ -18,16 +18,21 @@
 }
 
 .menu-text {
+  font-family: 'Track';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   display: flex;
-  align-items: center;
   color: #CFCFCD;
   mix-blend-mode: normal;
-  margin-bottom: 20px;
+  padding-left: 11px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 
+.menu-items-text {
+  margin-top: 4px;
 }
 
 .solid {
@@ -46,5 +51,15 @@
 .bottom-sidebar {
   margin-top: auto;
   position: relative;
-  bottom: -405px;
+  bottom: -470px;
+}
+
+.active {
+  background: #706E6A;
+  box-shadow: 0px 5px 10px #413E38;
+  border-radius: 5px;
+  padding-left: 11px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 280px;
 }

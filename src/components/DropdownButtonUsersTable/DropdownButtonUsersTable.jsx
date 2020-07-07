@@ -8,9 +8,9 @@ import arrow from '../../assets/arrow-down.png';
 const DropdownButtonUsersTable = () => {
   return (
     <div className="universal-dropdown-button">
-      <Dropdown className="actions-dropdown">
+      <Dropdown className="actions-dropdown text-center">
         <Dropdown.Toggle variant="success" id="dropdown-basic">
-          <div className="table-text-head actions-dropdown">
+          <div className="table-text-head actions-dropdown ml-3">
             Acties <img src={arrow} alt="Arrow Down" />{' '}
           </div>
           <div className="dropdown-menu-items">

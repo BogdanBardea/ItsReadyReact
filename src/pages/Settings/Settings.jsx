@@ -14,7 +14,7 @@ const Settings = () => {
       <div className="settings-button-second">
         <SettingsButtonSecond />
       </div>
-      <div className="row d-flex">
+      <div className="row d-flex settings-title">
         <div className="col head-title">
           <h3>BEHEERDERS</h3>
           <div className="col float-right">
@@ -22,7 +22,7 @@ const Settings = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="settings-table">
         <SettingsTable />
       </div>
     </div>

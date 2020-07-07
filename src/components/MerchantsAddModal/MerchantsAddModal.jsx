@@ -30,7 +30,8 @@ function MerchantsAddModal(props) {
         <Modal.Title>
           <div className="d-flex modal-title">
             <div className="col">
-              LOREM IPSUM ITALIAN RESTAURANT <img src={edit} alt="edit" />
+              LOREM IPSUM ITALIAN RESTAURANT
+              <img src={edit} alt="edit" />
             </div>
             <div className="d-flex mt-3 status">
               <div className="col status-text">STATUS</div>

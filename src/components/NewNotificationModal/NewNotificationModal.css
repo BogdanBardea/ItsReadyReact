@@ -91,6 +91,12 @@
   cursor: pointer;
 }
 
+.radio-input-checkbox {
+  position: relative !important;
+  top: 4px !important;
+}
+
+
 .profile-button-delete {
   color: #B5B268;
   padding: 12px;
@@ -194,6 +200,7 @@
 }
 
 .choice-text {
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

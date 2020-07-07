@@ -72,4 +72,27 @@ table {
 
 .btn {
   text-align: center;
+  outline: 0 !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+.actions-table-button {
+  width: 116px;
+  height: 39px;
+}
+
+.merchants-table-header {
+  width: 1137px;
+  height: 41px;
+  background: #F6F9FC;
+  border-radius: 10px;
+}
+
+.btn:focus {
+  outline: none !important;
+  outline-offset: none !important;
 }

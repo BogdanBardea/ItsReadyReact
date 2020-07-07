@@ -37,3 +37,8 @@
   border-radius: 10px !important;
   border: 1px;
 }
+
+.actions-table-button {
+  width: 116px;
+  height: 39px;
+}

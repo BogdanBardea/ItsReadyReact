@@ -44,6 +44,11 @@
   color: #FFFFFF !important;
 }
 
+.actions-table-button {
+  width: 116px;
+  height: 39px;
+}
+
 .table-data {
   font-style: normal;
   font-weight: normal;
@@ -74,3 +79,4 @@
   vertical-align: bottom;
   border-bottom: 0px !important;
 }
+

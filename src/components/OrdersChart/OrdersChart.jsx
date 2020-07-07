@@ -8,25 +8,9 @@ function OrdersChart() {
       {
         label: 'Series 1',
         data: [
-          { x: 1, y: 10 },
-          { x: 2, y: 10 },
-          { x: 3, y: 10 },
-        ],
-      },
-      {
-        label: 'Series 2',
-        data: [
-          { x: 1, y: 10 },
-          { x: 2, y: 10 },
-          { x: 3, y: 10 },
-        ],
-      },
-      {
-        label: 'Series 3',
-        data: [
-          { x: 1, y: 10 },
-          { x: 2, y: 10 },
-          { x: 3, y: 10 },
+          { x: 1, y: 15 },
+          { x: 2, y: 3 },
+          { x: 3, y: 19 },
         ],
       },
     ],

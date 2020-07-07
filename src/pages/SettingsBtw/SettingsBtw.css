@@ -7,6 +7,7 @@
   position: relative;
   left: 142px;
   top: -95px;
+  width: 20px;
 }
 
 .btw-text {
@@ -70,4 +71,19 @@
   text-align: center;
 
   color: #FFFFFF;
+}
+
+.settingsbtw-title {
+  position: relative;
+  top: -95px;
+}
+
+.settingsbtw-body {
+  position: relative;
+  top: -105px;
+}
+
+.settingsbtw-buttons {
+  position: relative;
+  top: -115px;
 }

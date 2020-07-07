@@ -20,7 +20,7 @@ const SettingsTable = () => {
             <th>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head">
+                  <div className="table-text-head ml-3">
                     Naam <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -36,7 +36,7 @@ const SettingsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head">
+                  <div className="table-text-head ml-3">
                     E-Mail <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -52,7 +52,7 @@ const SettingsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head">
+                  <div className="table-text-head ml-3">
                     GSM <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -101,29 +101,41 @@ const SettingsTable = () => {
         </thead>
         <tbody className="table-body">
           <tr>
-            <td>Gianluca Punzo</td>
-            <td>info@futurize.be</td>
-            <td>0484835621</td>
-            <td>Actief</td>
-            <td>1/10/2020</td>
             <td>
-              <Dropdown className="actions-dropdown">
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head actions-dropdown">
-                    Acties <img src={arrow} alt="Arrow Down" />{' '}
-                  </div>
-                  <div className="dropdown-menu-items">
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-2">
-                        <SettingsDeleteModal />
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-1">
-                        <SettingsDeleteModalFirst />
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </div>
-                </Dropdown.Toggle>
-              </Dropdown>
+              <div className="ml-3"> Gianluca Punzo </div>
+            </td>
+            <td>
+              <div className="ml-3">info@futurize.be</div>
+            </td>
+            <td>
+              <div className="ml-3">0484835621</div>
+            </td>
+            <td>
+              <div className="ml-3">Actief</div>
+            </td>
+            <td>
+              <div className="ml-3">1/10/2020</div>
+            </td>
+            <td>
+              <div className="actions-table-button">
+                <Dropdown className="actions-dropdown">
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    <div className="table-text-head actions-dropdown ml-3">
+                      Acties <img src={arrow} alt="Arrow Down" />{' '}
+                    </div>
+                    <div className="dropdown-menu-items">
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-2">
+                          <SettingsDeleteModal />
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">
+                          <SettingsDeleteModalFirst />
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </div>
+                  </Dropdown.Toggle>
+                </Dropdown>
+              </div>
             </td>
           </tr>
         </tbody>

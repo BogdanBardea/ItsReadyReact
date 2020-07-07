@@ -12,3 +12,7 @@
   color: #FFFFFF;
   text-align: center;
 }
+
+.third-button-text:hover {
+  color: white;
+}
