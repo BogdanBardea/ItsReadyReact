@@ -24,11 +24,14 @@
   font-size: 14px;
   line-height: 14px;
   display: flex;
+  flex-direction: row;
   color: #CFCFCD;
   mix-blend-mode: normal;
   padding-left: 11px;
   padding-bottom: 10px;
   padding-top: 10px;
+  width: 100%;
+  margin-bottom: 31px;
 }
 
 .menu-items-text {
@@ -51,7 +54,7 @@
 .bottom-sidebar {
   margin-top: auto;
   position: relative;
-  bottom: -470px;
+  bottom: -570px;
 }
 
 .active {
@@ -61,5 +64,5 @@
   padding-left: 11px;
   padding-bottom: 10px;
   padding-top: 10px;
-  width: 280px;
+  margin-bottom: 31px;
 }

@@ -50,7 +50,7 @@ const AsideMenu = () => {
       <img src={logo} alt="Logo" className="logo ml-5" />
       {imgSrc.map((item, idx) => {
         return (
-          <div key={idx} className="menu-text">
+          <div key={idx}>
             <Link to={item.link}>
               <div
                 className={
