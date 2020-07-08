@@ -24,10 +24,8 @@ const HomePage = () => {
         <OrdersChart />
         <IncomesChart />
       </div>
-      <div className="col-3 live-view mt-3">
-        <h3>LIVE OVERZICHT</h3>
-      </div>
-      <div>
+      <div className="col-3 live-view mt-3">LIVE OVERZICHT</div>
+      <div className="live-view-card-container">
         <LiveViewCards />
       </div>
     </div>

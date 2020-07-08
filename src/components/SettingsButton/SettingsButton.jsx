@@ -7,7 +7,7 @@ import AdministratorAddModal from '../AdministratorAddModal/AdministratorAddModa
 const SettingsButton = () => {
   return (
     <div>
-      <div className="float-right mr-5 download-text">
+      <div className="float-right download-text">
         <Button variant="primary">
           <img src={plus} alt="Plus" className="mr-3" />
           <AdministratorAddModal />

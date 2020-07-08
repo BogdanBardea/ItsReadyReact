@@ -6,6 +6,19 @@
   color: #494949;
 }
 
+.table-text-head-users {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #494949;
+  margin-left: 153px;
+}
+
+.date-users {
+  margin-left: 95px;
+}
+
 .dropdown-toggle::after {
   display: inline-block;
   margin-left: .255em;

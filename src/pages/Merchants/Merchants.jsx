@@ -9,7 +9,7 @@ const Merchants = () => {
     <div>
       <div className="row d-flex">
         <div className="col head-title">
-          <h3>HANDELAARS</h3>
+          HANDELAARS
           <div className="col float-right">
             <AddButton />
             <SearchBarMerchants />

@@ -1,9 +1,19 @@
-.table-text-head {
+.table-text-head-settings {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   color: #494949;
+  margin-left: 113px !important;
+}
+
+.table-text-head-settings-first {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #494949;
+  margin-left: 33px;
 }
 
 .dropdown-toggle::after {

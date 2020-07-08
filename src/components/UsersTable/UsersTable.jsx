@@ -21,7 +21,7 @@ const UsersTable = () => {
             <th>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head">
                     Naam <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -37,7 +37,7 @@ const UsersTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head ">
                     E-Mail <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -53,7 +53,7 @@ const UsersTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head ">
                     Adres <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -69,7 +69,7 @@ const UsersTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head ">
                     Geboortedatum <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -85,7 +85,7 @@ const UsersTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head ">
                     GSM <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -135,25 +135,25 @@ const UsersTable = () => {
         <tbody className="table-body">
           <tr>
             <td>
-              <div className="ml-3">Gianluca Punzo</div>
+              <div className="text-center">Gianluca Punzo</div>
             </td>
             <td>
-              <div className="ml-3">info@futurize.be</div>
+              <div className="text-center">info@futurize.be</div>
             </td>
             <td>
-              <div className="ml-3">Zandstraat 20, 3660 Oudsbergen</div>
+              <div className="text-center">Zandstraat 20, 3660 Oudsbergen</div>
             </td>
             <td>
-              <div className="ml-3">1/10/2020</div>
+              <div className="text-center">1/10/2020</div>
             </td>
             <td>
-              <div className="ml-3">0488896655</div>
+              <div className="text-center">0488896655</div>
             </td>
             <td>
-              <div className="ml-4">Man</div>
+              <div className="text-center">Man</div>
             </td>
             <td>
-              <div className="ml-3">1/10/2020</div>
+              <div className="text-center">1/10/2020</div>
             </td>
             <td>
               <div className="actions-table-button">

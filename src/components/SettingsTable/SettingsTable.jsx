@@ -20,7 +20,7 @@ const SettingsTable = () => {
             <th>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head-settings-first ">
                     Naam <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -36,7 +36,7 @@ const SettingsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head-settings  ">
                     E-Mail <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -52,7 +52,7 @@ const SettingsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head-settings  ">
                     GSM <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -68,7 +68,7 @@ const SettingsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head">
+                  <div className="table-text-head-settings ">
                     Status <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -84,7 +84,7 @@ const SettingsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head">
+                  <div className="table-text-head-settings ">
                     Actief sinds <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -105,16 +105,16 @@ const SettingsTable = () => {
               <div className="ml-3"> Gianluca Punzo </div>
             </td>
             <td>
-              <div className="ml-3">info@futurize.be</div>
+              <div className="text-center">info@futurize.be</div>
             </td>
             <td>
-              <div className="ml-3">0484835621</div>
+              <div className="text-center">0484835621</div>
             </td>
             <td>
-              <div className="ml-3">Actief</div>
+              <div className="text-center">Actief</div>
             </td>
             <td>
-              <div className="ml-3">1/10/2020</div>
+              <div className="text-center">1/10/2020</div>
             </td>
             <td>
               <div className="actions-table-button">

@@ -27,16 +27,16 @@ const SettingsBtw = () => {
         <div className="ml-5 mr-5 ">
           <div className="btw-text mb-3">Afhaal & levering</div>
           <div>
-            <input type="text" className="input-btw" />%
+            <input type="text" className="input-btw-first" />%
           </div>
           <div>
-            <input type="text" className="input-btw" />%
+            <input type="text" className="input-btw-first" />%
           </div>
           <div>
-            <input type="text" className="input-btw" />%
+            <input type="text" className="input-btw-first" />%
           </div>
           <div>
-            <input type="text" className="input-btw" />%
+            <input type="text" className="input-btw-first" />%
           </div>
         </div>
         <div className="">

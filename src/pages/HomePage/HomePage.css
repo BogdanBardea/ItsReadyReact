@@ -18,3 +18,16 @@
   line-height: 20px;
   color: #000000;
 }
+
+.dropdown-menu.show {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  right: auto;
+  bottom: auto;
+  transform: translate(0px, 50px);
+  background: #F2F2F2;
+  border-radius: 20px;
+}

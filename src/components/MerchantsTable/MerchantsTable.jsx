@@ -23,7 +23,7 @@ const MerchantsTable = () => {
             <th>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head-status">
                     Status <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -39,7 +39,7 @@ const MerchantsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head ">
                     Zaaknaam <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -55,8 +55,8 @@ const MerchantsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
-                    Type Zaak <img src={arrow} alt="Arrow Down" />{' '}
+                  <div className="table-text-head ">
+                    Type zaak <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
                     <Dropdown.Menu>
@@ -71,7 +71,7 @@ const MerchantsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head">
                     Manager <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -87,7 +87,7 @@ const MerchantsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head ">
                     GSM <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -103,7 +103,7 @@ const MerchantsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-5">
+                  <div className="table-text-head ">
                     Adres <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -119,7 +119,7 @@ const MerchantsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head ">
                     Actief sinds <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -142,22 +142,22 @@ const MerchantsTable = () => {
               </div>
             </td>
             <td className="table-data">
-              <div className="ml-4">Snack inn</div>
+              <div className="table-data text-center">Snack inn</div>
             </td>
             <td className="table-data">
-              <div className="ml-3">Broodjeszaak</div>
+              <div className="text-center">Broodjeszaak</div>
             </td>
             <td className="table-data">
-              <div className="ml-3">Sebastian Mathieu</div>
+              <div className="text-center">Sebastian Mathieu</div>
             </td>
             <td className="table-data">
-              <div className="ml-3">0488896655</div>
+              <div className="text-center">0488896655</div>
             </td>
             <td className="table-data">
-              <div className="ml-3">Zandstraat 20, 3660 Oudsbergen</div>
+              <div className="text-center">Zandstraat 20, 3660 Oudsbergen</div>
             </td>
             <td className="table-data">
-              <div className="ml-4">1/10/2020</div>
+              <div className="text-center">1/10/2020</div>
             </td>
             <td className="table-data">
               {' '}
@@ -170,12 +170,15 @@ const MerchantsTable = () => {
                     <div className="dropdown-menu-items">
                       <Dropdown.Menu>
                         <Dropdown.Item href="/login">Login</Dropdown.Item>
+                        <div className="divider-bottom"> </div>
                         <Dropdown.Item href="#/action-2">
                           <MerchantsDetailsModal />
                         </Dropdown.Item>
+                        <div className="divider-bottom"> </div>
                         <Dropdown.Item href="#/action-2">
                           <ExtraModal />
                         </Dropdown.Item>
+                        <div className="divider-bottom"> </div>
                         <Dropdown.Item href="#/action-2">
                           <MerchantsDeleteModal />
                         </Dropdown.Item>

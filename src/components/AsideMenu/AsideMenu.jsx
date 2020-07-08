@@ -66,9 +66,9 @@ const AsideMenu = () => {
           </div>
         );
       })}
-      <div className="bottom-sidebar solid">
+      {/* <div className="bottom-sidebar solid">
         <div className="menu-footer-text">© 2020 IT’S READY</div>
-      </div>
+      </div> */}
     </div>
   );
 };

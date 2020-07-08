@@ -40,9 +40,32 @@
 }
 
 .menu-items {
+
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   color: #000000;
+
+}
+
+.divider-bottom {
+  margin-left: 19px;
+  margin-right: 19px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: auto !important;
+  margin: 0px;
+  right: 0px !important;
+  bottom: auto;
+  transform: translate(0px, 50px);
+  background: #F2F2F2;
+  border-radius: 20px;
+  width: 212px;
+
 }

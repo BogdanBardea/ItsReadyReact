@@ -1,13 +1,14 @@
 .settings-button-first {
   position: relative;
-  top: -52px
+  top: -52px;
+  width: 120px;
 }
 
 .settings-button-second {
   position: relative;
   top: -96px;
   left: 142px;
-  width: 20px;
+  width: 120px;
 }
 
 .settings-title {

@@ -1,13 +1,14 @@
 .settings-button-third {
   position: relative;
   top: -52px;
+  width: 120px;
 }
 
 .settings-button-fourth {
   position: relative;
   left: 142px;
   top: -95px;
-  width: 20px;
+  width: 120px;
 }
 
 .btw-text {
@@ -33,7 +34,47 @@
   color: #494949;
   margin-bottom: 7px;
   margin-right: 10px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  margin-left: 20px;
+  align-items: center;
+
+  /* Paragraph text */
+
+  color: #494949;
 }
+
+
+.input-btw-first {
+  width: 42px;
+  height: 40px;
+  background: #FAFAFA;
+  box-shadow: inset 0px -2px 4px rgba(157, 157, 157, 0.15);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  color: #494949;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  margin-left: 40px;
+  align-items: center;
+
+  /* Paragraph text */
+
+  color: #494949;
+}
+
 
 .reset-button {
   width: 243px;

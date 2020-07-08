@@ -20,7 +20,7 @@ const NotificationsTable = () => {
             <th>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head">
                     Titel <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -36,7 +36,7 @@ const NotificationsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head-users">
                     Boodschap <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -52,7 +52,7 @@ const NotificationsTable = () => {
               {' '}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head ml-3">
+                  <div className="table-text-head">
                     Gepland/verzonden <img src={arrow} alt="Arrow Down" />{' '}
                   </div>
                   <div className="dropdown-menu-items">
@@ -70,13 +70,13 @@ const NotificationsTable = () => {
         <tbody className="table-body">
           <tr>
             <td>
-              <div className="ml-3"> Notification title </div>
+              <div className="ml-4"> Notification title </div>
             </td>
             <td>
               Zandstraat 20, 3660 Oudsbergen, Zandstraat 20, 3660 Oudsbergen
             </td>
             <td>
-              <div className="ml-5"> 1/10/2020 </div>
+              <div className="date-users"> 1/10/2020 </div>
             </td>
             <td>
               <img src={trash} alt="" />

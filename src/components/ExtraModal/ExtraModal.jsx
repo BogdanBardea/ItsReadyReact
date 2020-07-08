@@ -26,43 +26,43 @@ function ExtraModal(props) {
         <Modal.Header closeButton>
           <Modal.Title>
             <div className="container-fluid">
-              <div className="modal-title">Extra’s</div>
+              <div className="modal-title-custom">Extra’s</div>
             </div>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="container-fluid d-flex">
-            <div className="col modal-body-title">Payconiq</div>
+            <div className="col modal-body-title-custom">Payconiq</div>
             <div className="col text-right">
               <Switch />
             </div>
           </div>
           <div className="container-fluid d-flex">
-            <div className="col modal-body-title">Groepsbestelling</div>
+            <div className="col modal-body-title-custom">Groepsbestelling</div>
             <div className="col text-right">
               <Switch />
             </div>
           </div>
           <div className="container-fluid d-flex">
-            <div className="col modal-body-title">Klantenkaart</div>
+            <div className="col modal-body-title-custom">Klantenkaart</div>
             <div className="col text-right">
               <Switch />
             </div>
           </div>
           <div className="container-fluid d-flex">
-            <div className="col modal-body-title">Allergenen</div>
+            <div className="col modal-body-title-custom">Allergenen</div>
             <div className="col text-right">
               <Switch />
             </div>
           </div>
           <div className="container-fluid d-flex">
-            <div className="col modal-body-title">SMS/WhatsApp</div>
+            <div className="col modal-body-title-custom">SMS/WhatsApp</div>
             <div className="col text-right">
               <Switch />
             </div>
           </div>
           <div className="container-fluid d-flex">
-            <div className="col modal-body-title">Weergeven in overkoepelende app</div>
+            <div className="col modal-body-title-custom">Weergeven in overkoepelende app</div>
             <div className="col text-right">
               <Switch />
             </div>

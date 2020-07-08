@@ -49,8 +49,8 @@ function SettingsDeleteModalFirst(props) {
             <div variant="primary" className="profile-button-delete ">
               Annuleren
             </div>
-            <div variant="primary" className="profile-button ml-3">
-              Uitnodiging versturen
+            <div variant="primary" className="profile-button-custom ml-3">
+              Toewijzen & verwijderen
             </div>
           </div>
         </Modal.Footer>

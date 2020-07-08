@@ -94,31 +94,31 @@ function NewNotificationModal(props) {
               <div className="col modal-body-title">
                 <div className="col">
                   <div>
-                  <label class="container d-flex">
-                    <input
-                      type="radio"
-                      checked="checked"
-                      name="radio-second"
-                      className="radio-input-checkbox"
-                    />
-                    <span class="checkmark"></span>
-                    <div className="choice-text mb-3 ml-3">
-                      Verstuur naar iedereen
-                    </div>
-                  </label>
-                  <label class="container d-flex">
-                    <input
-                      type="radio"
-                      checked="checked"
-                      name="radio-second"
-                      className="radio-input-checkbox"
-                    />
-                    <span class="checkmark"></span>
-                    <div className="choice-text ml-3">
-                      Verstur locatie gericht
-                    </div>
-                  </label>
-                </div>
+                    <label class="container d-flex">
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="radio-second"
+                        className="radio-input-checkbox"
+                      />
+                      <span class="checkmark"></span>
+                      <div className="choice-text mb-3 ml-3">
+                        Verstuur naar iedereen
+                      </div>
+                    </label>
+                    <label class="container d-flex">
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="radio-second"
+                        className="radio-input-checkbox"
+                      />
+                      <span class="checkmark"></span>
+                      <div className="choice-text ml-3">
+                        Verstuur locatie gericht
+                      </div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>

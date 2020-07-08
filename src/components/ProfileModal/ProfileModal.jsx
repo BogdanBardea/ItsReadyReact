@@ -13,7 +13,9 @@ function ProfileModal(props) {
 
   return (
     <>
-      <div onClick={handleShow}>Profiel</div>
+      <div onClick={handleShow}>
+        <div className="profile-text mt-3">Profiel</div>
+      </div>
 
       <Modal
         {...props}
