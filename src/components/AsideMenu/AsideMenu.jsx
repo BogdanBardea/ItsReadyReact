@@ -14,6 +14,7 @@ import homeicon from '../../assets/homeicon.png';
 import planeicon from '../../assets/planeicon.png';
 import settingsicon from '../../assets/settingsicon.png';
 import usericon from '../../assets/usericon.png';
+import FooterText from '../FooterText/FooterText';
 
 const AsideMenu = () => {
   const imgSrc = [
@@ -46,30 +47,37 @@ const AsideMenu = () => {
   let history = useHistory();
   console.log('the path location is', history.location.pathname);
   return (
-    <div>
+    <>
       <img src={logo} alt="Logo" className="logo ml-5" />
-      {imgSrc.map((item, idx) => {
-        return (
-          <div key={idx}>
-            <Link to={item.link}>
-              <div
-                className={
-                  history.location.pathname == item.link
-                    ? 'menu-text active'
-                    : 'menu-text'
-                }
-              >
-                <img src={item.source} alt={item.name} className="mr-3" />
-                <div className="menu-items-text"> {item.name}</div>
+      <div
+        className="d-flex justify-content-between flex-column"
+        style={{ minHeight: '83%' }}
+      >
+        <div>
+          {imgSrc.map((item, idx) => {
+            return (
+              <div key={idx}>
+                <Link to={item.link}>
+                  <div
+                    className={
+                      history.location.pathname == item.link
+                        ? 'menu-text active'
+                        : 'menu-text'
+                    }
+                  >
+                    <img src={item.source} alt={item.name} className="mr-3" />
+                    <div className="menu-items-text"> {item.name}</div>
+                  </div>
+                </Link>
               </div>
-            </Link>
-          </div>
-        );
-      })}
-      {/* <div className="bottom-sidebar solid">
-        <div className="menu-footer-text">© 2020 IT’S READY</div>
-      </div> */}
-    </div>
+            );
+          })}
+        </div>
+        <div>
+          <FooterText />
+        </div>
+      </div>
+    </>
   );
 };
 export default AsideMenu;

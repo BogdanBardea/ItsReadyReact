@@ -29,6 +29,14 @@ a:hover {
   box-shadow: none !important;
 }
 
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  min-width: 1px !important;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

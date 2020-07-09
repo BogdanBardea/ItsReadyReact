@@ -1,26 +1,25 @@
 import React from 'react';
 import './SearchBarUsers.css';
-import search from '../../assets/search.png';
-
+import { ReactComponent as ReactLogo } from '../../assets/search.svg';
+import { FormControl, InputGroup } from 'react-bootstrap';
 const SearchBarUsers = () => {
   return (
-    <div className="searchbar float-right mr-4">
-      <form className="d-flex">
-        <input
-          type="text"
-          className="form-control rounded bg-light  py-2 mr-1 pr-5 center "
-          placeholder="Zoek gebruiker"
-        />
-        <span className="input-group-append">
-          <button
-            className="btn-search  ml-n5 search-button py-2"
-            type="button"
-          >
-            <img src={search} alt="search" />
-          </button>
-        </span>
-      </form>
-    </div>
+    <InputGroup className="mb-3 ml-auto">
+      <FormControl
+        placeholder="Zoek gebruiker"
+        aria-label="Recipient's username"
+        aria-describedby="basic-addon2"
+        className="searchbar-merchants"
+      />
+      <InputGroup.Append>
+        <button className="searchbar-button">
+          {' '}
+          <div className="search-icon">
+            <ReactLogo />
+          </div>
+        </button>
+      </InputGroup.Append>
+    </InputGroup>
   );
 };
 

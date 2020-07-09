@@ -7,16 +7,16 @@ import MerchantsTable from '../../components/MerchantsTable/MerchantsTable';
 const Merchants = () => {
   return (
     <div>
-      <div className="row d-flex">
-        <div className="col head-title">
-          HANDELAARS
-          <div className="col float-right">
-            <AddButton />
-            <SearchBarMerchants />
-          </div>
+      <div className="d-flex">
+        <div className="page-title">HANDELAARS</div>
+        <div className="ml-auto merchants-components">
+          <SearchBarMerchants />
+        </div>
+        <div className="merchants-components-second">
+          <AddButton />
         </div>
       </div>
-      <div>
+      <div className="">
         <MerchantsTable />
       </div>
     </div>

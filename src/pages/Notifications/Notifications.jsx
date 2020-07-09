@@ -7,16 +7,16 @@ import NotificationsTable from '../../components/NotificationsTable/Notification
 const Notifications = () => {
   return (
     <div>
-      <div className="row d-flex">
-        <div className="col head-title">
-          <h3>PUSHBERICHTEN</h3>
-          <div className="col float-right">
-            <NotificationButton />
-            <NotificationSearchBar />
-          </div>
+      <div className="d-flex">
+        <div className="page-title">PUSHBERICHTEN</div>
+        <div className="ml-auto merchants-components">
+          <NotificationSearchBar />
+        </div>
+        <div className="merchants-components-second">
+          <NotificationButton />
         </div>
       </div>
-      <div>
+      <div className="">
         <NotificationsTable />
       </div>
     </div>

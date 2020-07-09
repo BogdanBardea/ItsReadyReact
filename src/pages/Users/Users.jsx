@@ -6,15 +6,15 @@ import UsersTable from '../../components/UsersTable/UsersTable';
 const Users = () => {
   return (
     <div>
-      <div className="row d-flex">
-        <div className="col head-title">
-          <h3>GEBRUIKERS</h3>
-          <div className="col float-right">
-            <SearchBarUsers />
-          </div>
+      <div className="d-flex">
+        <div className="page-title">GEBRUIKERS</div>
+        <div className="ml-auto merchants-components">
+          <SearchBarUsers />
         </div>
       </div>
-      <UsersTable />
+      <div className="">
+        <UsersTable />
+      </div>
     </div>
   );
 };

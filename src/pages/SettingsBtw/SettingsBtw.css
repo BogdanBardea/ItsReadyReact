@@ -42,7 +42,7 @@
   /* identical to box height */
   margin-left: 20px;
   align-items: center;
-
+  border: none;
   /* Paragraph text */
 
   color: #494949;
@@ -69,7 +69,7 @@
   /* identical to box height */
   margin-left: 40px;
   align-items: center;
-
+  border: none;
   /* Paragraph text */
 
   color: #494949;
