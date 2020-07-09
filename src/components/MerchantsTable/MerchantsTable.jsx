@@ -13,6 +13,7 @@ import Switch from '../SwitchButton/SwitchButton';
 import MerchantsDetailsModal from '../MerchantsDetailsModal/MerchantsDetailsModal';
 import ExtraModal from '../ExtraModal/ExtraModal';
 import MerchantsDeleteModal from '../MerchantsDeleteModal/MerchantsDeleteModal';
+import arrowwhite from '../../assets/arrowdownwhite.png';
 
 const MerchantsTable = () => {
   return (
@@ -134,7 +135,7 @@ const MerchantsTable = () => {
             <th></th>
           </tr>
         </thead>
-        <tbody className="table-body">
+        <tbody>
           <tr>
             <td>
               <div className="ml-3">
@@ -165,7 +166,7 @@ const MerchantsTable = () => {
                 <Dropdown className="actions-dropdown text-center">
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
                     <div className="table-text-head actions-dropdown text-center ml-3">
-                      Acties <img src={arrow} alt="Arrow Down" />{' '}
+                      Acties <img src={arrowwhite} alt="Arrow Down white" />{' '}
                     </div>
                     <div className="dropdown-menu-items">
                       <Dropdown.Menu>

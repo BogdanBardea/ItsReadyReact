@@ -4,14 +4,14 @@ import UserDetailsModal from '../UserDetailsModal/UserDetailsModal';
 import DeleteUserModal from '../DeleteUsersModal/DeleteUserModal';
 import { Dropdown } from 'react-bootstrap';
 import arrow from '../../assets/arrow-down.png';
-
+import arrowwhite from '../../assets/arrowdownwhite.png';
 const DropdownButtonUsersTable = () => {
   return (
     <div className="universal-dropdown-button">
       <Dropdown className="actions-dropdown text-center">
         <Dropdown.Toggle variant="success" id="dropdown-basic">
           <div className="table-text-head actions-dropdown ml-3">
-            Acties <img src={arrow} alt="Arrow Down" />{' '}
+            Acties <img src={arrowwhite} alt="Arrow Down" />{' '}
           </div>
           <div className="dropdown-menu-items">
             <Dropdown.Menu>

@@ -10,6 +10,7 @@ import {
 } from 'react-bootstrap';
 import arrow from '../../assets/arrow-down.png';
 import trash from '../../assets/trash.png';
+import arrowwhite from '../../assets/arrowdownwhite.png';
 
 const NotificationsTable = () => {
   return (
@@ -67,7 +68,7 @@ const NotificationsTable = () => {
             <th></th>
           </tr>
         </thead>
-        <tbody className="table-body">
+        <tbody>
           <tr>
             <td>
               <div className="ml-4"> Notification title </div>

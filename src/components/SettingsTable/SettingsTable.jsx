@@ -11,6 +11,7 @@ import {
 import arrow from '../../assets/arrow-down.png';
 import SettingsDeleteModal from '../SettingsDeleteModal/SettingsDeletemodal';
 import SettingsDeleteModalFirst from '../SettingsDeleteModalFirst/SettingsDeletemodalFirst';
+import arrowwhite from '../../assets/arrowdownwhite.png';
 const SettingsTable = () => {
   return (
     <div className="mt-5">
@@ -99,7 +100,7 @@ const SettingsTable = () => {
             <th></th>
           </tr>
         </thead>
-        <tbody className="table-body">
+        <tbody>
           <tr>
             <td>
               <div className="ml-3"> Gianluca Punzo </div>
@@ -121,7 +122,7 @@ const SettingsTable = () => {
                 <Dropdown className="actions-dropdown">
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
                     <div className="table-text-head actions-dropdown ml-3">
-                      Acties <img src={arrow} alt="Arrow Down" />{' '}
+                      Acties <img src={arrowwhite} alt="Arrow Down" />{' '}
                     </div>
                     <div className="dropdown-menu-items">
                       <Dropdown.Menu>

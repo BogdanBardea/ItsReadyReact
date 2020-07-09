@@ -12,6 +12,7 @@ import arrow from '../../assets/arrow-down.png';
 import DeleteUserModal from '../DeleteUsersModal/DeleteUserModal';
 import UserDetailsModal from '../UserDetailsModal/UserDetailsModal';
 import DropdownButtonUsersTable from '../DropdownButtonUsersTable/DropdownButtonUsersTable';
+import arrowwhite from '../../assets/arrowdownwhite.png';
 const UsersTable = () => {
   return (
     <div className="container-fluid mt-5">
@@ -132,7 +133,7 @@ const UsersTable = () => {
             <th></th>
           </tr>
         </thead>
-        <tbody className="table-body">
+        <tbody>
           <tr>
             <td>
               <div className="text-center">Gianluca Punzo</div>
