@@ -33,7 +33,7 @@ function IncomesChart() {
       </div>
       <div
         style={{
-          width: '550px',
+          width: '480px',
           height: '231px',
           background: '#FFFFFF',
           boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.15)',
