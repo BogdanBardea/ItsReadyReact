@@ -14,7 +14,7 @@ import arrowwhite from '../../assets/arrowdownwhite.png';
 
 const NotificationsTable = () => {
   return (
-    <div className="container-fluid mt-5">
+    <div className="container-fluid mt-5 table-responsive">
       <Table responsive="sm">
         <thead>
           <tr>

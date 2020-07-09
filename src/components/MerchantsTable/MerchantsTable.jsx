@@ -17,7 +17,7 @@ import arrowwhite from '../../assets/arrowdownwhite.png';
 
 const MerchantsTable = () => {
   return (
-    <div className="container-fluid mt-5">
+    <div className="container-fluid mt-5 table-responsive">
       <Table>
         <thead>
           <tr className="merchants-table-header">

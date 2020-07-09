@@ -14,7 +14,7 @@ import SettingsDeleteModalFirst from '../SettingsDeleteModalFirst/SettingsDelete
 import arrowwhite from '../../assets/arrowdownwhite.png';
 const SettingsTable = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 table-responsive">
       <Table>
         <thead>
           <tr>

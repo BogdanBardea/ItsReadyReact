@@ -15,7 +15,7 @@ import DropdownButtonUsersTable from '../DropdownButtonUsersTable/DropdownButton
 import arrowwhite from '../../assets/arrowdownwhite.png';
 const UsersTable = () => {
   return (
-    <div className="container-fluid mt-5">
+    <div className="container-fluid mt-5 table-responsive">
       <Table responsive="sm">
         <thead>
           <tr className="text-center align-items-center">
