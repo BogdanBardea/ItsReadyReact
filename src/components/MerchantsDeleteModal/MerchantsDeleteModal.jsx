@@ -26,7 +26,7 @@ function MerchantsDeleteModal(props) {
           <Modal.Title>
             <div className="container-fluid">
               <div className="modal-title text-center">
-                Bent u zeker dat u Business Name wilt verwijderen?
+               <div className="delete-text-mercahnts"> Bent u zeker dat u <span className="business-name-text">Business Name </span>  wilt verwijderen?</div>
               </div>
             </div>
           </Modal.Title>
