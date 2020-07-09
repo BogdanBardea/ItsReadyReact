@@ -127,3 +127,18 @@
   margin-bottom: .5rem;
   margin-top: 0.4rem;
 }
+
+.delete-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.delete-name-text {
+  font-weight: bold;
+}

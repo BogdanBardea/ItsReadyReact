@@ -26,7 +26,7 @@ function DeleteUserModal(props) {
           <Modal.Title>
             <div className="container-fluid">
               <div className="modal-title text-center">
-                Bent u zeker dat u Gianluca Punzo wilt verwijderen?
+                <div className="delete-text">Bent u zeker dat u <span className="delete-name-text"> Gianluca Punzo </span> wilt verwijderen?</div>
               </div>
             </div>
           </Modal.Title>

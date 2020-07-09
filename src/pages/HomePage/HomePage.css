@@ -31,3 +31,9 @@
   background: #F2F2F2;
   border-radius: 20px;
 }
+
+.live-view-card-container {
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding: 10px;
+}

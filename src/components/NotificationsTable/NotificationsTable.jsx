@@ -14,8 +14,8 @@ import arrowwhite from '../../assets/arrowdownwhite.png';
 
 const NotificationsTable = () => {
   return (
-    <table class="table notifications-table mt-5">
-      <thead className="table-head-color notifications-table">
+    <table class="table  mt-5 merchants-table">
+      <thead className="table-head-color">
         <tr>
           <th scope="col">
             {' '}

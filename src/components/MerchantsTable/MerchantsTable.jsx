@@ -136,14 +136,18 @@ const MerchantsTable = () => {
         </thead>
         <tbody>
           <tr>
-            <th scope="row">
-              <Switch />
-            </th>
+            <td>
+              <div className="switch-button-merchants mt-3">
+                <Switch />
+              </div>
+            </td>
             <td>Snack inn</td>
             <td>Broodjeszaak</td>
             <td>Sebastian Mathieu</td>
             <td>0488896655</td>
-            <td>Zandstraat 20, 3660 Oudsbergen</td>
+            <td>
+              Zandstraat 20, 3660 <br></br>Oudsbergen
+            </td>
             <td>1/10/2020</td>
             <td>
               <div className="actions-table-button">

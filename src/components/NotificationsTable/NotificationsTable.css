@@ -8,10 +8,17 @@
 }
 
 .table-text-head-status {
-  color: black;
-  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #494949;
 }
 
+.table td,
+.table th {
+  vertical-align: middle !important;
+}
 
 
 .table-head-color {

@@ -136,7 +136,9 @@ const UsersTable = () => {
           <tr>
             <td>Gianluca Punzo</td>
             <td>info@futurize.be</td>
-            <td>Zandstraat 20, 3660 Oudsbergen</td>
+            <td>
+              Zandstraat 20, 3660 <br></br> Oudsbergen
+            </td>
             <td>1/10/2020</td>
             <td>0488896655</td>
             <td>Man</td>
