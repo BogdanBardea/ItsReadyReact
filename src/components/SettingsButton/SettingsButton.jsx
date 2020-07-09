@@ -8,7 +8,7 @@ const SettingsButton = () => {
   return (
     <div>
       <div className="float-right download-text">
-        <Button variant="primary">
+        <Button variant="primary" className="d-flex">
           <img src={plus} alt="Plus" className="mr-3" />
           <AdministratorAddModal />
         </Button>

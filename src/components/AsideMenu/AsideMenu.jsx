@@ -15,8 +15,7 @@ import planeicon from '../../assets/planeicon.png';
 import settingsicon from '../../assets/settingsicon.png';
 import usericon from '../../assets/usericon.png';
 import FooterText from '../FooterText/FooterText';
-
-const AsideMenu = () => {
+const AsideMenu = (props) => {
   const imgSrc = [
     {
       source: clockicon,
@@ -57,10 +56,15 @@ const AsideMenu = () => {
           {imgSrc.map((item, idx) => {
             return (
               <div key={idx}>
-                <Link to={item.link}>
+                <Link
+                  to={item.link}
+                  onClick={() => {
+                    props.setCurrentPage(item.link);
+                  }}
+                >
                   <div
                     className={
-                      history.location.pathname == item.link
+                      props.currentPage == item.link
                         ? 'menu-text active'
                         : 'menu-text'
                     }

@@ -7,17 +7,18 @@ import arrow from '../../assets/arrow-down.png';
 import arrowwhite from '../../assets/arrowdownwhite.png';
 const DropdownButtonUsersTable = () => {
   return (
-    <div className="universal-dropdown-button">
+    <div className="actions-table-button">
       <Dropdown className="actions-dropdown text-center">
         <Dropdown.Toggle variant="success" id="dropdown-basic">
-          <div className="table-text-head actions-dropdown ml-3">
-            Acties <img src={arrowwhite} alt="Arrow Down" />{' '}
+          <div className="table-text-head actions-dropdown text-center ml-3">
+            Acties <img src={arrowwhite} alt="Arrow Down white" />{' '}
           </div>
           <div className="dropdown-menu-items">
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">
+              <Dropdown.Item href="#/action-2">
                 <UserDetailsModal />
               </Dropdown.Item>
+              <div className="divider-bottom"> </div>
               <Dropdown.Item href="#/action-2">
                 <DeleteUserModal />
               </Dropdown.Item>

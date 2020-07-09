@@ -20,6 +20,7 @@ import EmailSent from './pages/ForgotPasswordEmailSent/ForgotPasswordEmailSent';
 import SettingsBtw from './pages/SettingsBtw/SettingsBtw';
 const App = (props) => {
   const history = createBrowserHistory();
+  const [currentPage, setCurrentPage] = useState(history.location.pathname);
   const [token, setToken] = useState(
     localStorage.getItem('token') ? localStorage.getItem('token') : ''
   );
@@ -72,7 +73,10 @@ const App = (props) => {
             style={{ maxWidth: '100%', margin: '0px', padding: '0px' }}
           >
             <div className="col-2">
-              <AsideMenu />
+              <AsideMenu
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+              />
             </div>
             <div className="col-10" style={{ paddingRight: '0px' }}>
               <Header

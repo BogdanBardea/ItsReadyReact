@@ -9,7 +9,6 @@
 .btn {
   background-color: transparent !important;
   border: 0 !important;
-  display: flex !important;
 }
 
 .dropdown-toggle::after {

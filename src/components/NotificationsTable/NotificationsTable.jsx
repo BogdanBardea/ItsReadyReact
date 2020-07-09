@@ -14,78 +14,79 @@ import arrowwhite from '../../assets/arrowdownwhite.png';
 
 const NotificationsTable = () => {
   return (
-    <div className="container-fluid mt-5 table-responsive">
-      <Table responsive="sm">
-        <thead>
-          <tr>
-            <th>
-              <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head">
-                    Titel <img src={arrow} alt="Arrow Down" />{' '}
-                  </div>
-                  <div className="dropdown-menu-items">
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Oplopend</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Aflopend</Dropdown.Item>
-                    </Dropdown.Menu>
-                  </div>
-                </Dropdown.Toggle>
-              </Dropdown>
-            </th>
-            <th>
+    <table class="table notifications-table mt-5">
+      <thead className="table-head-color notifications-table">
+        <tr>
+          <th scope="col">
+            {' '}
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <div className="table-text-head-status">
+                  Titel
+                  <img src={arrow} alt="Arrow Down" />{' '}
+                </div>
+                <div className="dropdown-menu-items">
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Oplopend</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Aflopend</Dropdown.Item>
+                  </Dropdown.Menu>
+                </div>
+              </Dropdown.Toggle>
+            </Dropdown>
+          </th>
+          <th scope="col">
+            {' '}
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <div className="table-text-head-status">
+                  Boodschap <img src={arrow} alt="Arrow Down" />{' '}
+                </div>
+                <div className="dropdown-menu-items">
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Oplopend</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Aflopend</Dropdown.Item>
+                  </Dropdown.Menu>
+                </div>
+              </Dropdown.Toggle>
+            </Dropdown>
+          </th>
+          <th scope="col">
+            {' '}
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <div className="table-text-head-status">
+                  Gepland/verzonden <img src={arrow} alt="Arrow Down" />{' '}
+                </div>
+                <div className="dropdown-menu-items">
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Oplopend</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Aflopend</Dropdown.Item>
+                  </Dropdown.Menu>
+                </div>
+              </Dropdown.Toggle>
+            </Dropdown>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Notification Titel</td>
+          <td>
+            <div className="ml-3">
               {' '}
-              <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head-users">
-                    Boodschap <img src={arrow} alt="Arrow Down" />{' '}
-                  </div>
-                  <div className="dropdown-menu-items">
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Oplopend</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Aflopend</Dropdown.Item>
-                    </Dropdown.Menu>
-                  </div>
-                </Dropdown.Toggle>
-              </Dropdown>
-            </th>
-            <th>
-              {' '}
-              <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  <div className="table-text-head">
-                    Gepland/verzonden <img src={arrow} alt="Arrow Down" />{' '}
-                  </div>
-                  <div className="dropdown-menu-items">
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Oplopend</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Aflopend</Dropdown.Item>
-                    </Dropdown.Menu>
-                  </div>
-                </Dropdown.Toggle>
-              </Dropdown>
-            </th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div className="ml-4"> Notification title </div>
-            </td>
-            <td>
-              Zandstraat 20, 3660 Oudsbergen, Zandstraat 20, 3660 Oudsbergen
-            </td>
-            <td>
-              <div className="date-users"> 1/10/2020 </div>
-            </td>
-            <td>
-              <img src={trash} alt="" />
-            </td>
-          </tr>
-        </tbody>
-      </Table>
-    </div>
+              Zandstraat 20, 3660 Oudsbergen, Zandstraat 20, 3660 Oudsbergen{' '}
+            </div>
+          </td>
+          <td>
+            <div className="ml-3"> 1/10/2020 </div>
+          </td>
+          <td>
+            <img src={trash} alt="trash" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
   );
 };
 
