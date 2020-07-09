@@ -15,7 +15,7 @@ const SettingsTable = () => {
   return (
     <div className="mt-5">
       <Table>
-        <thead className="table-header">
+        <thead>
           <tr>
             <th>
               <Dropdown>

@@ -15,7 +15,7 @@ const NotificationsTable = () => {
   return (
     <div className="container-fluid mt-5">
       <Table responsive="sm">
-        <thead className="table-header">
+        <thead>
           <tr>
             <th>
               <Dropdown>

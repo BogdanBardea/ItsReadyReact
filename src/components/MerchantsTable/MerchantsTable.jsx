@@ -18,7 +18,7 @@ const MerchantsTable = () => {
   return (
     <div className="container-fluid mt-5">
       <Table>
-        <thead className="table-header-merchants">
+        <thead>
           <tr className="merchants-table-header">
             <th>
               <Dropdown>

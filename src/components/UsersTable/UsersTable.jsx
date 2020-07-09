@@ -16,7 +16,7 @@ const UsersTable = () => {
   return (
     <div className="container-fluid mt-5">
       <Table responsive="sm">
-        <thead className="table-header">
+        <thead>
           <tr className="text-center align-items-center">
             <th>
               <Dropdown>
